@@ -2,6 +2,12 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdbool.h>
+#include <raylib.h>
+#include <unistd.h>
+#define RAYGUI_IMPLEMENTATION
+#include <raygui.h>
+
+
 #define BUFFER_SIZE 64
 
 
@@ -68,6 +74,34 @@ void Withdrawal(int *userBalance, int *userWallet){
 //--------------------------------
 
 int main (int argc, char *argv[]) {
+
+////---------------------------------
+//// Creating Window
+//
+//    //Dimensions
+//    InitWindow(1000,700, "Bank of Seth");
+//    SetTargetFPS(60);
+//
+//    //Main window loop
+//    while (!WindowShouldClose()){
+//
+//        //Begin Draw and setting some "Constants"
+//        BeginDrawing();
+//        ClearBackground(WHITE);
+//        GuiSetStyle(DEFAULT, TEXT_SIZE, 80);
+//
+//        //Creating Labels
+//        GuiLabel((Rectangle){280.0f,5.0f,500.f,200.0f},"Bank of Seth");
+//        GuiLabel((Rectangle){200.0f, 90.0f, 500.0f, 200.0f}, "Login");
+//
+//
+//        //End Draw
+//        EndDrawing();
+//
+//
+//    }
+
+
 
 
 //--------------------------------
@@ -171,7 +205,7 @@ int main (int argc, char *argv[]) {
         return 1;
     }
 
-
+    sleep(5);
 
 return 0;
 
